@@ -1,8 +1,5 @@
 const removeFromArray = function(arr, ...Args) {
-    const toRemove = new Set(Args);
-    const difference = arr.filter(x => !toRemove.has(x));
-    
-    return difference;
+    return arr.filter(x => !Args.includes(x));
 };
 
 // Do not edit below this line
