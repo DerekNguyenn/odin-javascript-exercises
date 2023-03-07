@@ -5,9 +5,8 @@ const sumAll = function(a, b) {
     if (Math.sign(a) === -1 || Math.sign(b) === -1) return "ERROR";
 
     // Swap arguments if the second passed in is greater than first
-    let temp = 0;
     if (a > b) {
-        temp = a;
+        const temp = a;
         a = b;
         b = temp;
     }
