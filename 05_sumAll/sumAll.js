@@ -1,6 +1,6 @@
 const sumAll = function(a, b) {
 
-    // 
+    // Check if argument is a non-negative integer
     if (!Number.isInteger(a) || !Number.isInteger(b) || Math.sign(a) === -1 || Math.sign(b) === -1) {
         return "ERROR";
     }
